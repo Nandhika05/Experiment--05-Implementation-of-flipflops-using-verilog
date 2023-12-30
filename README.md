@@ -3,7 +3,9 @@
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:   Quartus prime
 ### THEORY 
-SR Flip-Flop
+
+## SR Flip-Flop
+
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167910294-bb550548-b1dc-4cba-9044-31d9037d476b.png)
@@ -127,7 +129,7 @@ RegisterNumber: 212223040125
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 
-SR flip-flop:
+## SR flip-flop:
 
    module exp_5_1(S,R,clk,Q,Qbar);
    input S,R,clk;
@@ -142,7 +144,7 @@ SR flip-flop:
    end
    endmodule
 
-D flip-flop:
+## D flip-flop:
 
 module exp_5D(D,clk,Q,Qbar);
 input D,clk;
@@ -157,7 +159,7 @@ Qbar=~D;
 end
 endmodule
 
-JK flip-flop:
+## JK flip-flop:
 
 module exp_5_2(J,K,clk,Q,Qbar);
 input J,K,clk;
@@ -172,7 +174,7 @@ Qbar=((~J)&(Qbar))|K&(~Qbar);
 end
 endmodule
 
-T flip-flop:
+## T flip-flop:
 
 module exp_5_4(T,clk,Q,Qbar);
 input T,clk;
